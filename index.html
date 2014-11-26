@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta http-equiv="pragma" content="no-cache">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=0" />
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta charset="utf-8">
+
+<title>弹力小方块-多玩小游戏</title>
+
+<link rel="shortcut icon" href="icon.png">
+<link rel="icon" href="icon.png">
+
+
+<style>
+	.body {overflow: hidden; background: #222; color:#cccccc; margin: 0px; padding: 0px; border: 0px; } 
+
+	#game_div {image-rendering: optimizeSpeed; -webkit-interpolation-mode: nearest-neighbor; margin: 0px; padding: 0px; border: 0px; }
+
+	:-webkit-full-screen #game_div {width: 100%; height: 100%; } 
+</style>
+<script type="text/javascript" src="zepto.min.js"></script>
+
+
+<script type="text/javascript" src="phaser.min.js"></script>
+<script type="text/javascript" src="main.js"></script>
+
+
+<script type="text/javascript">
+    document.ontouchmove = function(e) {e.preventDefault()};
+    </script>
+<style type="text/css">
+    * {
+        -webkit-touch-callout: none;
+        -webkit-user-select: none; /* Disable selection/copy in UIWebView */
+    }
+</style>
+
+
+</head>
+
+<body class="body">
+<div id="wrapper">
+	<div id="game_div" style="position: absolute;"></div>
+</div>
+</body>
+
+</html>
